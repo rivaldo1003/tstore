@@ -1,0 +1,74 @@
+flutter_native_splash:
+  # Warna atau background_image adalah parameter yang wajib. Gunakan warna untuk mengatur latar belakang
+  # layar splash ke warna solid. Gunakan background_image untuk mengatur latar belakang layar splash ke
+  # gambar png. Ini berguna untuk gradien. Gambar akan direntangkan ke ukuran aplikasi. Hanya satu
+  # parameter yang bisa digunakan, warna dan background_image tidak bisa keduanya diatur.
+  color: "#FFFFFF"
+  #background_image: "assets/background.png"
+
+  # Parameter opsional tercantum di bawah. Untuk mengaktifkan parameter, buka komentar pada baris tersebut
+  # dengan menghapus karakter # di depannya.
+
+  # Parameter gambar memungkinkan Anda menentukan gambar yang digunakan dalam layar splash.
+  # Ini harus berupa file png dan harus memiliki ukuran ketebalan 4x.
+  image: assets/logos/logo-gsja-black.png
+
+  # Properti branding memungkinkan Anda menentukan gambar yang digunakan sebagai branding dalam layar splash.
+  # Ini harus berupa file png. Ini didukung untuk Android, iOS, dan Web.
+  #branding: assets/dart.png
+
+  # Untuk menempatkan gambar branding di bagian bawah layar, Anda bisa menggunakan bottom, bottomRight,
+  # dan bottomLeft. Nilai default adalah bottom jika tidak ditentukan atau ditentukan yang lain.
+  #branding_mode: bottom
+
+  # Parameter color_dark, background_image_dark, image_dark, branding_dark adalah parameter yang menentukan latar belakang
+  # dan gambar ketika perangkat berada dalam mode gelap. Jika tidak ditentukan, aplikasi akan menggunakan
+  # parameter dari atas. Jika parameter image_dark ditentukan, color_dark atau background_image_dark harus ditentukan.
+  # color_dark dan background_image_dark tidak bisa keduanya diatur.
+  color_dark: "#272727"
+  #background_image_dark: "assets/dark-background.png"
+  image_dark: assets/logos/logo-gsja-white.png
+  #branding_dark: assets/dart_dark.png
+
+  # Dari Android 12 ke atas, layar splash ditangani dengan cara yang berbeda dibandingkan dengan versi sebelumnya.
+  # Silakan kunjungi https://developer.android.com/guide/topics/ui/splash-screen
+  # Berikut adalah parameter khusus untuk Android 12+.
+  android_12:
+    # Parameter gambar menetapkan gambar ikon layar splash. Jika parameter ini tidak ditentukan,
+    # ikon peluncur aplikasi akan digunakan sebagai gantinya.
+    # Perhatikan bahwa layar splash akan dipotong menjadi lingkaran di tengah layar.
+    # Ikon aplikasi dengan latar belakang ikon: Ini harus 960×960 piksel, dan muat dalam lingkaran
+    # 640 piksel diameter.
+    # Ikon aplikasi tanpa latar belakang ikon: Ini harus 1152×1152 piksel, dan muat dalam lingkaran
+    # 768 piksel diameter.
+    #image: assets/logos/logo-gsja-black.png
+
+    # Warna latar belakang layar splash.
+    #color: "#FFFFFF"
+
+    # Warna latar belakang ikon aplikasi.
+    #icon_background_color: "#111111"
+
+    # Properti branding memungkinkan Anda menentukan gambar yang digunakan sebagai branding dalam layar splash.
+    #branding: assets/dart.png
+
+    # Parameter image_dark, color_dark, icon_background_color_dark, dan branding_dark menetapkan nilai yang
+    # berlaku ketika perangkat berada dalam mode gelap. Jika tidak ditentukan, aplikasi akan menggunakan
+    # parameter dari atas.
+    image_dark: assets/logos/logo-gsja-white.png
+    #color_dark: "#272727"
+    #icon_background_color_dark: "#eeeeee"
+
+  # Parameter android, ios, dan web dapat digunakan untuk menonaktifkan pembuatan layar splash pada platform yang diberikan
+  #android: false
+  ios: true
+  #web: false
+
+  # Gambar platform spesifik dapat ditentukan dengan parameter berikut, yang akan menimpa
+  # parameter yang sesuai. Anda dapat menentukan semua, beberapa, atau tidak ada parameter ini:
+  #color_android: "#42a5f5"
+  #color_dark_android: "#042a49"
+  #color_ios: "#42a5f5"
+  #color_dark_ios: "#042a49"
+  #color_web: "#42a5f5"
+  #color_dark_web: "#042a49"
